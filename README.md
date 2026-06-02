@@ -234,6 +234,7 @@ Full_Stack_KPI_Dashboard
 ├── .gitignore
 │
 └── README.md
+```
 ---
 
 ## Core Competencies Demonstrated
