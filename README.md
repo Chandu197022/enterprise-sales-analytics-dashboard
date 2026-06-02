@@ -201,14 +201,20 @@ The solution enables stakeholders to:
 ---
 
 ## Project Structure
-
 ```text
 Full_Stack_KPI_Dashboard
 │
+├── dashboard
+│   └── KPI_Dashboard.pbix
+│
 ├── data
-│   ├── raw
-│   ├── processed
-│   └── exports
+│   ├── exports
+│   │   ├── category_sales.csv
+│   │   ├── monthly_sales.csv
+│   │   └── regional_sales.csv
+│   │
+│   └── processed
+│       └── superstore_cleaned.csv
 │
 ├── sql
 │   ├── 01_kpi_queries.sql
@@ -217,23 +223,17 @@ Full_Stack_KPI_Dashboard
 │   └── 04_geographical_analysis.sql
 │
 ├── src
+│   ├── business_analysis.py
+│   ├── eda.py
 │   ├── extract.py
-│   ├── transform.py
 │   ├── load.py
 │   ├── main.py
-│   └── eda.py
+│   ├── requirements.txt
+│   └── transform.py
 │
-├── dashboard
-│   └── KPI_Dashboard.pbix
-│
-├── reports
-│   └── screenshots
-│
-├── requirements.txt
+├── .gitignore
 │
 └── README.md
-```
-
 ---
 
 ## Core Competencies Demonstrated
